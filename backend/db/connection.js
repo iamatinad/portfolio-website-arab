@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
-// const uri = process.env.ATLAS_URI || "";
-const client = new MongoClient(process.env.ATLAS_URI);
+// const uri = process.env.MONGO_URI || "";
+const client = new MongoClient(process.env.MONGO_URI);
 const DATABASE_NAME = "portfolio_db";
 
 try {
