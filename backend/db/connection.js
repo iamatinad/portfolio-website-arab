@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 
 // const uri = process.env.MONGO_URI || "";
 const client = new MongoClient(process.env.MONGO_URI);
-const DATABASE_NAME = "portfolio_arab_db";
+const DATABASE_NAME = "portofolio_arab_db";
 
 try {
   await client.connect();
