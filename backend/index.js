@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import skills from "./routes/skills.routes.js";
 import projects from "./routes/projects.routes.js";
-import posts from "./routes/posts.routes.js";
+import blogs from "./routes/blogs.routes.js";
 import experiences from "./routes/experiences.routes.js";
 import achievements from "./routes/achievements.routes.js";
 
@@ -24,7 +24,7 @@ app.use(cors());
 //load routes
 app.use("/skills", skills);
 app.use("/projects", projects);
-app.use("/posts", posts);
+app.use("/blogs", blogs);
 app.use("/experiences", experiences);
 app.use("/achievements", achievements);
 
