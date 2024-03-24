@@ -30,7 +30,7 @@ router.get("/:id", async (req, res) => {
 });
 
 //Endpoint for adding a single blog
-router.blog("/", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     let newBlog = {
       title: req.body.title,
