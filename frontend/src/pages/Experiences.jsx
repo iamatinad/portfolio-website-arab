@@ -2,14 +2,14 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function Achievements() {
+function Experiences() {
   return (
     <div>
       <Header />
-      <div>Achievements Page Goes Here</div>
+      <div>Experience Page Goes Here</div>
       <Footer />
     </div>
   );
 }
 
-export default Achievements;
+export default Experiences;
