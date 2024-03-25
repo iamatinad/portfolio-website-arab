@@ -7,7 +7,8 @@ function Skills() {
     <div>
       <Header />
       <div>Skills Page Goes Here</div>
-      <Footer></Footer>
+      <Footer/>
+      
     </div>
   );
 }
