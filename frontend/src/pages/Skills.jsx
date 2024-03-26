@@ -6,7 +6,7 @@ function Skills() {
   return (
     <div>
       <Header />
-      <div>Skills Page Goes Here</div>
+      <div>Skills</div>
       <Footer/>
       
     </div>

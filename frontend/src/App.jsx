@@ -3,12 +3,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
-import Experiences from "./pages/Experiences";
+import Experiences from "./pages/Experiences"
 import Blogs from "./pages/Blogs";
 import Achievements from "./pages/Achievements";
 import Projects from "./pages/Projects"
 
 function App() {
+  // const isAboveMediumScreens =useMediaQuery("(min-width:1060px)");
   return (
     <div>
       <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/achievements" element={<Achievements/>}></Route>
         </Routes>
       </BrowserRouter>
+      
     </div>
   );
 }
