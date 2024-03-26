@@ -6,10 +6,14 @@ import Skills from "./pages/Skills";
 import Experiences from "./pages/Experiences";
 import Blogs from "./pages/Blogs";
 import Achievements from "./pages/Achievements";
-import Projects from "./pages/Projects"
+import Projects from "./pages/Projects";
+import LineGradient from "./components/LineGradient";
+import useMediaQuery from "./hooks/useMediaQuery";
 import "./App.css"
 
 function App() {
+
+  const isAboveMediumScreens =useMediaQuery("(min-width: 1060px)");
   return (
     <div>
       <BrowserRouter>
@@ -23,6 +27,7 @@ function App() {
           <Route path="/achievements" element={<Achievements/>}></Route>
         </Routes>
       </BrowserRouter>
+      <LineGradient/>
     </div>
   );
 }
