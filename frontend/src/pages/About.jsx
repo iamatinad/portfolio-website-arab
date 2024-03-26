@@ -51,7 +51,7 @@ function About() {
           vision into reality.
           <br />
           Join us on this exciting journey and discover the endless
-          possibilities of web development with Arab Money.
+          possibilities of web development with Arab Moneyppppppppppp.
         </p>
 
         <h2>Test</h2>
