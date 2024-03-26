@@ -6,7 +6,7 @@ import Project2 from '../assets/Project2.jpg';
 
 function Projects() {
   return (
-    <div className="bg-black m-20 max-w-full">
+    <div className= "bg-black m-20 max-w-full ">
       <div className="grid justify-items-center m-10">
         <h1 className="text-3xl text-white mt -10">Projects</h1>
       </div>
