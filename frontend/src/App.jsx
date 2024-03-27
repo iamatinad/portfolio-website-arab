@@ -7,6 +7,7 @@ import Projects from "./pages/Projects";
 import Experiences from "./pages/Experiences";
 import Blogs from "./pages/Blogs";
 
+
 function App() {
   return (
     <div>
