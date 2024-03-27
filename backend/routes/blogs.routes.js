@@ -1,9 +1,13 @@
 import { Router } from "express";
 import { ObjectId } from "mongodb"; // This help convert the id from string to ObjectId for the _id.
 import db from "../db/connection.js";
+import multer from "multer";
 
 const router = Router();
 const BlogsCollection = db.collection("blogs");
+
+//Create multer upload middelware
+const upload = multer({ dest: "uploads/blogs" });
 
 //Endpoint for getting list of blogs
 router.get("/", async (req, res) => {
@@ -30,7 +34,7 @@ router.get("/:id", async (req, res) => {
 });
 
 //Endpoint for adding a single blog
-router.post("/", async (req, res) => {
+router.post("/", upload.single("image"), async (req, res) => {
   try {
     let newBlog = {
       title: req.body.title,
@@ -47,7 +51,7 @@ router.post("/", async (req, res) => {
 });
 
 //Endpoint for updating a blog by the id
-router.patch("/:id", async (req, res) => {
+router.patch("/:id", upload.single("image"), async (req, res) => {
   try {
     const query = { _id: new ObjectId(req.params.id) };
     const updates = {
