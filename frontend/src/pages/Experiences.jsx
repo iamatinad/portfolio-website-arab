@@ -2,17 +2,17 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import background2 from "../assets/background2.png"
-import apiGetAllExperiences from "../"
+import { apiGetAllExperiences } from "../services/experiences.services";
 
-function Achievements() {
-  const [achievements, setAchievements] = useState([])
+function Experiences() {
+  const [experiences, setExperiences] = useState([])
 
   useEffect(() => {
     (async () => {
       try {
-        const results = await apiGetAllAchievements()
+        const results = await apiGetAllExperiences()
         // console.log(results.data)
-        setAchievements(results.data)
+        setExperiences(results.data)
 
       } catch (error) {
         console.error(error)
@@ -27,15 +27,17 @@ function Achievements() {
       <h1 class="mb-8 font-bold text-8xl	" >EXPERIENCES</h1>
       <h2 class=" text-4xl mt-8 font-bold">HEROES ARE MADE</h2>
       <div class=" grid	 grid-rows-3 gap-5  mix-blend-darken		mt-10	 bg-slate-200	">
-      <div class="">
-        <h3 class="font-bold">Agro-eCommerce Website</h3>
-        <p class="font-semibold	">Recognized for spearheading the development and launch <br/>of a groundbreaking product, driving increased sales and customer engagement.
-        </p>
-      </div>
-      <div>
-        <h3  class="font-bold		">Movies Streaming Website</h3>
-        <p class="font-semibold"> Received top honors for consistently exceeding client expectations, delivering <br/>exceptional service and results.</p>
-      </div>
+      {
+            experiences.map((experiences, index) => (
+              <div class="" key={index}>
+                <h3 class="font-bold">{experiences.role}</h3>
+                <p class="font-semibold">{experiences.company}</p>
+                <p>{experiences.duration}</p>
+                <p>{experiences.responsibilities}</p>
+                <img src={experiences.logo} alt="logo image" />
+              </div>
+            ))
+          }
       </div>
       </div>
 
