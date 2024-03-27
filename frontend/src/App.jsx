@@ -7,6 +7,7 @@ import Experiences from "./pages/Experiences";
 import Blogs from "./pages/Blogs";
 import Achievements from "./pages/Achievements";
 import Projects from "./pages/Projects"
+import "./App.css"
 
 function App() {
   return (
