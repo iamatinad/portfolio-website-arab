@@ -15,13 +15,13 @@ function Achievements() {
       <h2 class=" text-4xl mt-8 font-bold">We Made Our Mark</h2>
       <div class=" grid	 grid-rows-3 gap-5  mix-blend-darken		mt-10	 bg-slate-200	">
       <div class="">
-        <h3 class="font-medium		">Product Innovation Award</h3>
-        <p class="">Recognized for spearheading the development and launch <br/>of a groundbreaking product, driving increased sales and customer engagement.
+        <h3 class="font-bold		">Product Innovation Award</h3>
+        <p class="font-semibold">Recognized for spearheading the development and launch <br/>of a groundbreaking product, driving increased sales and customer engagement.
         </p>
       </div>
       <div>
-        <h3  class="font-medium		">Client Satisfaction Champion</h3>
-        <p> Received top honors for consistently exceeding client expectations, delivering <br/>exceptional service and results.</p>
+        <h3  class="font-bold		">Client Satisfaction Champion</h3>
+        <p class="font-semibold"> Received top honors for consistently exceeding client expectations, delivering <br/>exceptional service and results.</p>
       </div>
       </div>
       </div>
