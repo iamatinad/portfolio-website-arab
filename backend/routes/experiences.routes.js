@@ -5,9 +5,6 @@ import { ObjectId } from "mongodb"; // This help convert the id from string to O
 const router = Router();
 const ExperiencesCollection = db.collection("experiences");
 
-//Create multer upload middelware
-const upload = multer({ dest: "uploads/experiences" });
-
 
 //Endpoint for getting list of experiences
 router.get("/", async (req, res) => {
