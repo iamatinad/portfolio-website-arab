@@ -66,7 +66,7 @@ function About() {
         className="flex justify-between items-center m-20"
       >
         <h2 className="text-4xl font-extrabold mb-10 overline text-green-700">About AM Agency</h2>
-        <div className="bg-white shadow-md rounded-lg p-10 w-3/5 shadow-2xl shadow-yellow-900">
+        <div className="bg-white rounded-lg p-10 w-3/5 shadow-2xl shadow-yellow-800">
 
           <p className="text-lg leading-relaxed text-gray-700 font-bold">
             Welcome to Arab Money, a powerhouse team of four passionate web
