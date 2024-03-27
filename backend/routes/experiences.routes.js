@@ -1,9 +1,12 @@
 import { Router } from "express";
 import db from "../db/connection.js";
 import { ObjectId } from "mongodb"; // This help convert the id from string to ObjectId for the _id.
+import multer from "multer";
 
 const router = Router();
 const ExperiencesCollection = db.collection("experiences");
+
+
 
 //Endpoint for getting list of experiences
 router.get("/", async (req, res) => {
