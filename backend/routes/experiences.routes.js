@@ -6,10 +6,13 @@ import multer from "multer";
 const router = Router();
 const ExperiencesCollection = db.collection("experiences");
 
+//create multer upload middlewear
+const upload=multer({dest:"uploads/experiences"});
+
 
 
 //Endpoint for getting list of experiences
-router.get("/", async (req, res) => {
+router.get("/", upload.single("image"),async (req, res) => {
   try {
     let results = await ExperiencesCollection.find({}).toArray();
     res.send(results).status(200);
@@ -33,7 +36,7 @@ router.get("/:id", async (req, res) => {
 });
 
 //Endpoint for adding a single experience
-router.post("/", async (req, res) => {
+router.post("/",upload.single("image"), async (req, res) => {
   try {
     let newExperience = {
       role: req.body.role,
