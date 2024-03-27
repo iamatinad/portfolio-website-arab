@@ -2,8 +2,24 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import background2 from "../assets/background2.png"
+import apiGetAllExperiences from "../"
 
-function Experiences() {
+function Achievements() {
+  const [achievements, setAchievements] = useState([])
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const results = await apiGetAllAchievements()
+        // console.log(results.data)
+        setAchievements(results.data)
+
+      } catch (error) {
+        console.error(error)
+      }
+    })();
+  }, [])
+
   return (
     <div>
       <Header />
