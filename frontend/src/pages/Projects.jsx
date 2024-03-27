@@ -51,7 +51,15 @@ function Projects() {
         </div>
       </div>
       <hr />
-      <div className="grid grid-cols-2 gap-4 p-5"></div>
+      <div className="grid grid-cols-2 gap-4 p-5">
+      <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:animate-pulse">
+      <div className="md:flex">
+      <div  className="uppercase tracking-wide text-sm text-bg-black font-semibold">
+      MARABFOODS(https://github.com/iamatinad/marabfoods)
+      </div>
+      </div>
+      </div>
+      </div>
     </div>
   );
 }
