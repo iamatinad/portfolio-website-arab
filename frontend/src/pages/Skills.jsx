@@ -1,17 +1,16 @@
-import React from 'react'
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 function Skills() {
   return (
-
     <div>
       <Header />
       <div>Skills</div>
       <Footer/>
       
     </div>
-  
-    <div>Skills</div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
