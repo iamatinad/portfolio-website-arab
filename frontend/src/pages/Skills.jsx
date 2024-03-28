@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import frontendImg from "../assets/images/frontend.png";
 import backendImg from "../assets/images/backend.png";
 import  uiuxdesignImg from "../assets/images/ui/uxdesign.png";
 import  appImg from "../assets/images/appdesign.png";
+ import {apiGetAllSkills} from"../services/skills.services";
+
 
 
 
 function Skills() {
-  
+   
   return (
     <div>
       <Header />
