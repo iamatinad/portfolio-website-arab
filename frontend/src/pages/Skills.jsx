@@ -1,30 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import frontendImg from "../assets/images/frontend.png";
 import backendImg from "../assets/images/backend.png";
 import  uiuxdesignImg from "../assets/images/ui/uxdesign.png";
 import  appImg from "../assets/images/appdesign.png";
- import {apiGetAllSkills} from"../services/skills.services";
 
 
 
-
- function Skills() {
-  const [skills, setSkills] = useState([])
-
-  useEffect(() => {
-    (async () => {
-      try {
-        const results = await apiGetAllSkills()
-        // console.log(results.data)
-        setSkills(results.data)
-
-      } catch (error) {
-        console.error(error)
-      }
-    })();
-  }, [])
+function Skills() {
+  
   return (
     <div>
       <Header />
@@ -115,8 +100,7 @@ import  appImg from "../assets/images/appdesign.png";
                   <h3 className=" text-purple-700 font mb-3 group-hover:text-white group-hover:font-[600] text-xl">UI/UX Design</h3>
 
                   < ul className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">
-                    <li>UI/UX DESIGN</li>
-                     <li>PROTOTYPING</li>
+                      <li>PROTOTYPING</li>
                      <li>WIREFRAMING</li>
                      <li>SOFT SKILLS</li>
                      <li>VIRTUAL DESIGN</li>
