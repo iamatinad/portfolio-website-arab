@@ -1,5 +1,4 @@
 import express from "express";
-import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 import skills from "./routes/skills.routes.js";
@@ -28,8 +27,6 @@ app.use("/blogs", blogs);
 app.use("/experiences", experiences);
 app.use("/achievements", achievements);
 
-// Make database connection
-await mongoose.connect(process.env.MONGO_URI);
 
 //start the server
 app.listen(PORT, () => {

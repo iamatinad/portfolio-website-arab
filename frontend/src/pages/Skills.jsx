@@ -9,6 +9,7 @@ import  appImg from "../assets/images/appdesign.png";
 
 
 function Skills() {
+  
   return (
     <div>
       <Header />
