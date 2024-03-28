@@ -10,8 +10,21 @@ import  appImg from "../assets/images/appdesign.png";
 
 
 
-function Skills() {
-   
+ function Skills() {
+  const [skills, setSkills] = useState([])
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const results = await apiGetAllSkills()
+        // console.log(results.data)
+        setSkills(results.data)
+
+      } catch (error) {
+        console.error(error)
+      }
+    })();
+  }, [])
   return (
     <div>
       <Header />
