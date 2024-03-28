@@ -1,9 +1,13 @@
 import { Router } from "express";
 import db from "../db/connection.js";
 import { ObjectId } from "mongodb"; // This help convert the id from string to ObjectId for the _id.
+import multer from "multer";
 
 const router = Router();
 const AchievementsCollection = db.collection("achievements");
+
+//Create multer upload middelware
+const upload = multer({ dest: "uploads/achievements" });
 
 //Endpoint for getting list of achievements
 router.get("/", async (req, res) => {
@@ -30,7 +34,7 @@ router.get("/:id", async (req, res) => {
 });
 
 //Endpoint for adding a single achievement
-router.post("/", async (req, res) => {
+router.post("/", upload.single("image"), async (req, res) => {
   try {
     let newAchievement = {
       achievement: req.body.achievement,
@@ -47,7 +51,7 @@ router.post("/", async (req, res) => {
 });
 
 //Endpoint for updating a achievement by the id
-router.patch("/:id", async (req, res) => {
+router.patch("/:id", upload.single("image"), async (req, res) => {
   try {
     const query = { _id: new ObjectId(req.params.id) };
     const updates = {

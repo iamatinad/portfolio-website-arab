@@ -6,6 +6,7 @@ import multer from "multer";
 const router = Router();
 const ExperiencesCollection = db.collection("experiences");
 
+
 //create multer upload middlewear
 const upload=multer({dest:"uploads/experiences"});
 
@@ -43,7 +44,6 @@ router.post("/",upload.single("image"), async (req, res) => {
       company: req.body.company,
       duration: req.body.duration,
       responsibilities: req.body.responsibilities,
-      logo: req.body.logo,
     };
 
     let result = await ExperiencesCollection.insertOne(newExperience);
@@ -64,7 +64,6 @@ router.patch("/:id", async (req, res) => {
         company: req.body.company,
         duration: req.body.duration,
         responsibilities: req.body.responsibilities,
-        logo: req.body.logo,
       },
     };
 
