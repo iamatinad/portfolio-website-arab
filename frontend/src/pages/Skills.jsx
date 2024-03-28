@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import frontendImg from "../assets/images/frontend.png";
 import backendImg from "../assets/images/backend.png";
 import  uiuxdesignImg from "../assets/images/ui/uxdesign.png";
+import  appImg from "../assets/images/appdesign.png";
 
 
 
@@ -15,7 +16,7 @@ function Skills() {
       <div className="container lg:pt-5">
              <div className="text-center"> 
              <h2 className=" text-headingColor font-[800] text-[2.4rem] mb-5">Skills</h2>
-             <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font -[500] text-[16px] leading-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nisi placeat harum sint aliquid qui culpa, voluptate molestiae quod cupiditate cum, odit, deleniti iusto nemo. Sit illum natus aspernatur id.</p>
+             <p className="lg:max-w-[600px] lg:mx-auto text-headingColor font -[500] text-[16px] leading-7">CREATING CONNECTED BRANDS, COMMERCE, PRODUCTS, AND WEB EXPERIENCE.</p>
              </div>
 
         <div className="flex flex-col justify-center sm:py-12">
@@ -35,7 +36,16 @@ function Skills() {
                 <div data-aos='fade-right' data-aos-duration='1200' className="bg-white p-4 rounded shadow group hover:bg-black cursor-pointer ease-in duration-150">
                   <h3 className=" text-purple-700 font mb-3 group-hover:text-white group-hover:font-[600] text-xl">Frontend Development</h3>
 
-                  <p className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam nisi excepturi culpa quidem est pariatur iste sunt a ipsum, minus maxime dolorum dolore at accusantium corrupti quisquam, distinctio iusto.</p>
+                  < ul className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">
+                    <li> HTML</li>
+                     <li>JAVASCRIPT</li>
+                     <li>CSS</li>
+                     <li>SOFT SKILLS</li>
+                     <li>SEO</li>
+                     <li>VERSION CONTROL</li>
+                     <li>CREATIVITY</li>
+                     <li>TESTING&DEBUGGING</li>
+                   </ul>
                 </div>
               </div>
             </div>
@@ -56,10 +66,18 @@ function Skills() {
 
             <div className="flex justify-end w-full mx-auto items-center"> 
               <div className="w-full sm:w-1/2 sm:pl-8">
-                <div data-aos='fade-right' data-aos-duration='1200' className="bg-white p-4 rounded shadow group hover:bg-black cursor-pointer ease-in duration-150">
+                <div data-aos='fade-left' data-aos-delay='50' data-aos-duration='1300' className="bg-white p-4 rounded shadow group hover:bg-black cursor-pointer ease-in duration-150">
                   <h3 className=" text-purple-700 font mb-3 group-hover:text-white group-hover:font-[600] text-xl">Backend Development</h3>
 
-                  <p className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam nisi excepturi culpa quidem est pariatur iste sunt a ipsum, minus maxime dolorum dolore at accusantium corrupti quisquam, distinctio iusto.</p>
+                 < ul className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">
+                    <li>BACKEND PROGRAMMING </li>
+                     <li> FRONTEND TECHNOLOGY</li>
+                     <li>VERSION CONTROL</li>
+                     <li>SOFT SKILLS</li>
+                     <li>DATABASES</li>
+                     <li>API</li>
+                     <li>SERVERS HANDLING</li>
+                   </ul>
                 </div>
               </div>
             </div>
@@ -77,10 +95,18 @@ function Skills() {
 
             <div className="flex justify-start w-full mx-auto items-center"> 
               <div className="w-full sm:w-1/2 sm:pr-8">
-                <div data-aos='fade-right' data-aos-duration='1200' className="bg-white p-4 rounded shadow group hover:bg-black cursor-pointer ease-in duration-150">
+                <div data-aos='fade-right' data-aos-delay='100' data-aos-duration='1400' className="bg-white p-4 rounded shadow group hover:bg-black cursor-pointer ease-in duration-150">
                   <h3 className=" text-purple-700 font mb-3 group-hover:text-white group-hover:font-[600] text-xl">UI/UX Design</h3>
 
-                  <p className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nam nisi excepturi culpa quidem est pariatur iste sunt a ipsum, minus maxime dolorum dolore at accusantium corrupti quisquam, distinctio iusto.</p>
+                  < ul className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">
+                    <li>UI/UX DESIGN</li>
+                     <li>PROTOTYPING</li>
+                     <li>WIREFRAMING</li>
+                     <li>SOFT SKILLS</li>
+                     <li>VIRTUAL DESIGN</li>
+                     <li>MOBILE DESIGN</li>
+                     <li>CREATIVITY</li>
+                   </ul>
                 </div>
               </div>
             </div>
@@ -91,8 +117,36 @@ function Skills() {
           </figure>
             </div>
             </div>
-            
+             </div>
+              {/* ==================right card================== */}
+              <div className="mt-6 sm:mt-0 sm:mb-12">
+            <div className="flex items-center flex-col sm:flex-row">
+
+            <div className="flex justify-end w-full mx-auto items-center"> 
+              <div className="w-full sm:w-1/2 sm:pl-8">
+                <div data-aos='fade-left' data-aos-duration='1500' className="bg-white p-4 rounded shadow group hover:bg-black cursor-pointer ease-in duration-150">
+                  <h3 className=" text-purple-700 font mb-3 group-hover:text-white group-hover:font-[600] text-xl">App Development</h3>
+
+                  < ul className="text-[15px] text-blue-900 group-hover:text-white group-hover:font-[500] leading-7">
+                    <li>PROGRAMMING LANGUAGES</li>
+                     <li>UI DESIGN</li>
+                     <li>BACKEND DEVELOPMENT</li>
+                     <li>SOFT SKILLS</li>
+                     <li>USER EXPERIENCE DESIGN</li>
+                     <li>AGILE DEVELOPMENT</li>
+                   </ul>
+                </div>
+              </div>
             </div>
+
+            <div className="rounded-full bg-purple-500 border-white border-4 w-10 h-10 absolute right-1/2 transform-translate-x-1/2- translate-y-4 sm:translate-y-0 flex items-center justify-center">
+            <figure>
+            <img src= {appImg} alt=""/>
+          </figure>
+            </div>
+            </div> 
+            </div>
+
 
           </div>
           </div>
