@@ -5,6 +5,7 @@ import { ObjectId } from "mongodb"; // This help convert the id from string to O
 const router = Router();
 const ExperiencesCollection = db.collection("experiences");
 
+
 //Endpoint for getting list of experiences
 router.get("/", async (req, res) => {
   try {
@@ -37,7 +38,6 @@ router.post("/", async (req, res) => {
       company: req.body.company,
       duration: req.body.duration,
       responsibilities: req.body.responsibilities,
-      logo: req.body.logo,
     };
 
     let result = await ExperiencesCollection.insertOne(newExperience);
@@ -58,7 +58,6 @@ router.patch("/:id", async (req, res) => {
         company: req.body.company,
         duration: req.body.duration,
         responsibilities: req.body.responsibilities,
-        logo: req.body.logo,
       },
     };
 

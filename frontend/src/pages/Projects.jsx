@@ -2,7 +2,7 @@ import React from 'react';
 import Project1 from "../assets/Project1.jpg";
 import Project2 from "../assets/Project2.jpg";
 
-function Projects() {
+const Projects = () => {
   return (
     <div className="bg-black m-5 md:m-20 max-w-full">
       <div className="grid justify-items-center m-5 md:m-10">
