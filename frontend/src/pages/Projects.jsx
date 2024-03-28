@@ -7,7 +7,7 @@ import Project5 from "../assets/Project5.jpg";
 import Project6 from "../assets/Project6.jpg";
 
 
-function Projects() {
+const Projects = () => {
   return (
     <div className="bg-black m-5 md:m-20 max-w-full">
       <div className="grid justify-items-center m-5 md:m-10">
