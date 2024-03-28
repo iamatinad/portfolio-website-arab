@@ -1,6 +1,8 @@
 import React from "react";
 import Project1 from "../assets/Project1.jpg";
 import Project2 from "../assets/Project2.jpg";
+// import Project3 from "../assets/Project3.jpg";
+// import Project4 from "../assets/Project4.jpg";
 
 function Projects() {
   return (
@@ -49,9 +51,49 @@ function Projects() {
             </div>
           </div>
         </div>
+        
       </div>
       <hr />
-      <div className="grid grid-cols-2 gap-4 p-5"></div>
+      <div className="grid grid-cols-2 gap-4 p-5"> 
+      <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:animate-pulse">
+          <div className="md:flex">
+            <div className="p-5 md:p-8">
+              <div className="uppercase tracking-wide text-sm text-bg-black font-semibold">
+                XYC LTD
+              </div>
+              <p className="mt-2 text-slate-500">
+                At AM Agency we make your products comes to life.
+              </p>
+            </div>
+            <div className="md:shrink-0 p-5">
+              <img
+                src={Project1}
+                alt="Project1"
+                className="object-cover w-full md:w-72 h-72 md:h-auto"
+              />
+            </div>
+          </div>
+        </div> 
+        <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:animate-pulse">
+          <div className="md:flex">
+            <div className="p-5 md:p-8">
+              <div className="uppercase tracking-wide text-sm text-bg-black font-semibold">
+                BEAUTY BODY GH
+              </div>
+              <p className="mt-2 text-slate-500">
+                We take care of our skin like an egg.
+              </p>
+            </div>
+            <div className="md:shrink-0 p-5">
+              <img
+                src={Project1}
+                alt="Project1"
+                className="object-cover w-full md:w-72 h-72 md:h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
   );
 }
