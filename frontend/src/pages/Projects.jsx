@@ -1,6 +1,11 @@
 import React from 'react';
 import Project1 from "../assets/Project1.jpg";
 import Project2 from "../assets/Project2.jpg";
+import Project3 from "../assets/Project3.jpg";
+import Project4 from "../assets/Project4.jpg";
+import Project5 from "../assets/Project5.jpg";
+import Project6 from "../assets/Project6.jpg";
+
 
 function Projects() {
   return (
@@ -56,16 +61,16 @@ function Projects() {
           <div className="md:flex">
             <div className="p-5 md:p-8">
               <div className="uppercase tracking-wide text-sm text-bg-black font-semibold">
-                MARABFOODS WEBSITE
+                REBRAND OF XYZ LTD
               </div>
               <p className="mt-2 text-slate-500">
-                A marketplace for buying and selling agro products.
+                A logistics company making lives easier for everyone.
               </p>
             </div>
             <div className="md:shrink-0 p-5">
               <img
-                src={Project1}
-                alt="Project1"
+                src={Project3}
+                alt="Project3"
                 className="object-cover w-full md:w-72 h-72 md:h-auto"
               />
             </div>
@@ -75,26 +80,66 @@ function Projects() {
           <div className="md:flex">
             <div className="p-5 md:p-8">
               <div className="uppercase tracking-wide text-sm text-bg-black font-semibold">
-                MARABFOODS WEBSITE
+                BLUE BODYCARE GH
               </div>
               <p className="mt-2 text-slate-500">
-                A marketplace for buying and selling agro products.
+                Your skin is a precious diamond to us.
               </p>
             </div>
             <div className="md:shrink-0 p-5">
               <img
-                src={Project1}
-                alt="Project1"
+                src={Project4}
+                alt="Project4"
+                className="object-cover w-full md:w-72 h-72 md:h-auto"
+              />
+            </div>
+          </div>
+         </div>
+        </div>
+        <hr />
+        <div className="grid grid-cols-2 gap-4 p-5">
+        <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:animate-pulse">
+          <div className="md:flex">
+            <div className="p-5 md:p-8">
+              <div className="uppercase tracking-wide text-sm text-bg-black font-semibold">
+                UHAMBO 
+              </div>
+              <p className="mt-2 text-slate-500">
+                Making Travel easy and fun!.
+              </p>
+            </div>
+            <div className="md:shrink-0 p-5">
+              <img
+                src={Project5}
+                alt="Project5"
                 className="object-cover w-full md:w-72 h-72 md:h-auto"
               />
             </div>
           </div>
         </div>
-    </div>
-    
+        <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:animate-pulse">
+          <div className="md:flex">
+            <div className="p-5 md:p-8">
+              <div className="uppercase tracking-wide text-sm text-bg-black font-semibold">
+                AM AGENCY
+              </div>
+              <p className="mt-2 text-slate-500">
+              Offering Creative-Led Design & Development For Ambitious Brands That Want To Expand & Create
+              </p>
+            </div>
+            <div className="md:shrink-0 p-5">
+              <img
+                src={Project6}
+                alt="Project6"
+                className="object-cover w-full md:w-72 h-72 md:h-auto"
+              />
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
   )
 }
 
-export default Projects
+export default Projects;
   
